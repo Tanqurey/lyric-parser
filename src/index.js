@@ -48,7 +48,7 @@ export default class Lyric {
         const txt = line.replace(timeExp, '').trim()
         if (txt) {
           this.lines.push({
-            time: result[1] * 60 * 1000 + result[2] * 1000 + (result[3] || 0) * 10,
+            time: result[1] * 60 * 1000 + result[2] * 1000 + (result[3] || 0),
             txt
           })
         }
